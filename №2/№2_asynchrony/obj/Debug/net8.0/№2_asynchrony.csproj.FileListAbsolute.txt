@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\bin\Debug\net8.0\№2_asynchrony.exe
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\bin\Debug\net8.0\№2_asynchrony.deps.json
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\bin\Debug\net8.0\№2_asynchrony.runtimeconfig.json
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\bin\Debug\net8.0\№2_asynchrony.dll
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\bin\Debug\net8.0\№2_asynchrony.pdb
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\obj\Debug\net8.0\№2_asynchrony.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\obj\Debug\net8.0\№2_asynchrony.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\obj\Debug\net8.0\№2_asynchrony.AssemblyInfo.cs
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\obj\Debug\net8.0\№2_asynchrony.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\obj\Debug\net8.0\№2_asynchrony.sourcelink.json
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\obj\Debug\net8.0\№2_asynchrony.dll
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\obj\Debug\net8.0\refint\№2_asynchrony.dll
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\obj\Debug\net8.0\№2_asynchrony.pdb
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\obj\Debug\net8.0\№2_asynchrony.genruntimeconfig.cache
+C:\Users\user\Desktop\C#\№2_asynchrony\№2_asynchrony\obj\Debug\net8.0\ref\№2_asynchrony.dll
