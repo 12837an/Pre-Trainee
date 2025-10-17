@@ -1,6 +1,7 @@
 ﻿using TaskManager.services;
 
-namespace TaskManager.ui
+namespace TaskManager.Cons
+
 {
     public class ConsoleInterface
     {
@@ -17,21 +18,30 @@ namespace TaskManager.ui
             {
                 Console.Clear();
                 Console.WriteLine("Менеджер задач");
-                Console.WriteLine("1. Все задачи");
-                Console.WriteLine("2. Добавить задачу");
-                Console.WriteLine("3. Изменить статус");
-                Console.WriteLine("4. Удалить задачу");
-                Console.WriteLine("5. Выход");
+                Console.WriteLine($"{ConsoleConstants.MENU_SHOW_TASKS}. Все задачи");
+                Console.WriteLine($"{ConsoleConstants.MENU_ADD_TASK}. Добавить задачу");
+                Console.WriteLine($"{ConsoleConstants.MENU_CHANGE_STATUS}. Изменить статус");
+                Console.WriteLine($"{ConsoleConstants.MENU_REMOVE_TASK}. Удалить задачу");
+                Console.WriteLine($"{ConsoleConstants.MENU_EXIT}. Выход");
                 Console.Write("Выберите цифру: ");
 
                 var input = Console.ReadLine();
                 switch (input)
                 {
-                    case "1": await ShowTasks(); break;
-                    case "2": await AddTask(); break;
-                    case "3": await ChangeStatus(); break;
-                    case "4": await RemoveTask(); break;
-                    case "5": return;
+                    case ConsoleConstants.MENU_SHOW_TASKS: 
+                        await ShowTasks(); 
+                        break;
+                    case ConsoleConstants.MENU_ADD_TASK:
+                        await AddTask(); 
+                        break;
+                    case ConsoleConstants.MENU_CHANGE_STATUS: 
+                        await ChangeStatus(); 
+                        break;
+                    case ConsoleConstants.MENU_REMOVE_TASK: 
+                        await RemoveTask(); 
+                        break;
+                    case ConsoleConstants.MENU_EXIT: 
+                        return;
                     default:
                         Console.WriteLine("Неверный выбор");
                         Console.ReadKey();
@@ -182,15 +192,15 @@ namespace TaskManager.ui
         {
             while (true)
             {
-                Console.Write("Задача выполнена? (y/n/д/н): ");
+                Console.Write(ConsoleConstants.Confirmation.PromptMessage);
                 var input = Console.ReadLine()?.ToLower().Trim();
 
-                if (input == "y" || input == "yes" || input == "д" || input == "да")
+                if (ConsoleConstants.Confirmation.AllYesValues.Contains(input))
                     return true;
-                else if (input == "n" || input == "no" || input == "н" || input == "нет")
+                else if (ConsoleConstants.Confirmation.AllNoValues.Contains(input))
                     return false;
                 else
-                    Console.WriteLine("Ошибка. Необходимо ввести  y/n (д/н)\n");
+                    Console.WriteLine(ConsoleConstants.Confirmation.ErrorMessage);
             }
         }
     }

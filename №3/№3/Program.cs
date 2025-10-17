@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using TaskManager.data;
 using TaskManager.repositories;
 using TaskManager.services;
-using TaskManager.ui;
+using TaskManager.Cons;
 
 var config = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
