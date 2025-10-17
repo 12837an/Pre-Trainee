@@ -3,7 +3,7 @@ using TaskManager.repositories;
 
 namespace TaskManager.services
 {
-    public class TaskService
+    public class TaskService: ITaskService
     {
         private readonly ITaskRepository _taskRepository;
 
